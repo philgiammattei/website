@@ -1,0 +1,38 @@
+
+body {
+  background-color: green;
+  margin: 0;
+}
+div {
+  background-color: purple;
+}
+hr {
+  background-color: #eeeeee;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: grey;
+  border-width: 7px;
+  width: 10%;
+}
+h1 {
+  color: #66BFBF;
+  margin-top: 0;
+}
+h2 {
+  color: #66BFBF;
+}
+h3 {
+  color: #66BFBF
+  }
+
+  /*********CLASS INDICATORS********/
+  .middle-container {
+   width: 200px;
+   height: 200px;
+    background-color: red;
+  }
+  .bottom-container {
+   width: 200px;
+   height: 200px;
+    background-color: blue;
+  }
