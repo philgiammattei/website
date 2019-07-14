@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Phil Giammattei</title>
+  <meta name="description" content="Web Developer, iOS Developer, Designer,
+    Musician.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/minesweeper.css">
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <div class="profile-img">
+    <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" /></a>
+  </div>
+  <h1 class="profile-header">Phil Giammattei</h1>
+  <a href="javascript: void(0);" class="icon" onclick="menuToggle()">
+    <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+</a>
+
+</header>
+<nav id="nav">
+  <ul class="main-nav">
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li><a href="blog.html">BLOG</a></li>
+    <li><a href="Contact.html">CONTACT</a></li>
+  </ul>
+</nav>
+
+<div class="gamecontainer">
+  <div class="gamescore">
+    <h4 id = "bombsleft">Creepers Left: </h4>
+    <h4 id="soundtoggle">Sound: On</h4>
+  </div>
+  <div id="minesweeper-canvas" class="minesweeper-canvas" oncontextmenu="return false;">
+    <div id="gameoversplash">
+    </div>
+    <div id="gameover">
+      <h1 id = "winlose">Game Over!</h1>
+      <h3 id="playagain">Play Again</h3>
+    </div>
+  </div>
+</div>
+
+
+
+
+<script src="scripts/minesweeper/minesweeper.js"></script>
+
+<footer>
+  <a href="https://twitter.com/philgiammattei">Twitter</a>
+  <a href="https://www.linkedin.com/in/philgiammattei/">LinkedIn</a>
+  <a href="https://github.com/philgiammattei">GitHub</a>
+</footer>
+<script type="text/javascript">
+function menuToggle() {
+  var menu = document.getElementById("nav");
+  if (menu.style.display === "block") {
+    menu.style.display = "none";
+  } else {
+    menu.style.display = "block";
+  }
+}
+</script>
+  </body>
+</html>

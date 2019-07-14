@@ -7,22 +7,29 @@
   <meta name="description" content="Web Developer, iOS Developer, Designer,
     Musician.">
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico"
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 <header>
-  <a href="index.html"><img src="images/profile.jpg" alt="Phil Giammattei" /></a>
-  <h1>Phil Giammattei</h1>
+  <div class="profile-img">
+    <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" /></a>
+  </div>
+  <h1 class="profile-header">Phil Giammattei</h1>
+  <a href="javascript: void(0);" class="icon" onclick="menuToggle()">
+    <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+</a>
+
 </header>
-<nav>
+<nav id="nav">
   <ul class="main-nav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="projects.html">Projects</a></li>
-    <li><a href="blog.html">Blog</a></li>
-    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="index.html">HOME</a></li>
+    <li><a href="about.html">ABOUT</a></li>
+    <li><a href="projects.html">PROJECTS</a></li>
+    <li><a href="blog.html">BLOG</a></li>
+    <li><a href="Contact.html">CONTACT</a></li>
   </ul>
 </nav>
 
@@ -39,17 +46,14 @@
   <h2>Projects:</h2>
   <div class="project">
     KerfCase.com
-
   </div>
   <div class="project">
-    Bad Custer - iOS App
+    <a href="minesweeper.html">Minesweeper</a> 
   </div>
   <div class="project">
     giammattei.co
   </div>
-  <div class="project">
-    minesweeper
-  </div>
+
 </div>
   <div class="recentblog">
     <h2>Most Recent Blog Post</h2>
@@ -109,7 +113,16 @@
     <a href="https://www.linkedin.com/in/philgiammattei/">LinkedIn</a>
     <a href="https://github.com/philgiammattei">GitHub</a>
   </footer>
-
+<script type="text/javascript">
+  function menuToggle() {
+    var menu = document.getElementById("nav");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
 </body>
 
 </html>

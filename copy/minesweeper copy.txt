@@ -1,0 +1,21 @@
+Introducing
+MINECRAFT: Creeper Sweeper!
+(or, "Mine-Sweeper" for short)
+
+I was born...
+2000 or after
+A wholly original new game that turns Minecraft blocks into a fun logic puzzler!
+1999 or before
+Microsoft's classic Minesweeper, with Minecraft art and sound.
+
+break stone blocks to find treasure, but watch out for creepers.
+
+The type of block you discover will give you clues to nearby creepers.
+
+The number in each block corresponds to the number of creepers nearby (diagonals count!).  Use deduction (or good guesses) to steer clear of danger.
+
+Click/tap a stone block to mark a suspected creeper block with redstone.  hold to break it, revealing what's underneath.
+
+You win when you break every block but the creeper blocks!  The Creeper Counter will track your progress, but only if you accurately use the redstone markers.
+
+you lose if you discover a creeper.

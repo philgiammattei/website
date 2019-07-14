@@ -1,11 +1,60 @@
+/*
+font-family: 'Muli', sans-serif;
+font-family: 'Rubik', sans-serif;
+font-family: 'Signika', sans-serif;
+font-family: 'Play', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  background-color: green;
+  background-color: #2A1B3D;
   margin: 0;
 }
-div {
-  background-color: purple;
+
+p, h1, h2, h3, h4, h5, h6, li {
+  color: #FCFBE3;
+  font-family: 'Muli', sans-serif;
+
 }
+
+a:link {
+  text-decoration: none;
+  color: #A4B3B6;
+}
+
+a:visited {
+  text-decoration: none;
+  color: #b6a4b3;
+}
+
+a:hover {
+  text-decoration:underline;
+  color: #b3b6a4;
+
+}
+a:active {
+  text-decoration:underline;
+  color: #b3b6a4;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 200px;
+}
+
+header h1 {
+  font-size: 70px;
+  font-family: 'Play', sans-serif;
+  padding: 0 20px 0 20px;
+}
+
 hr {
   background-color: #eeeeee;
   border-style: none;
@@ -14,25 +63,57 @@ hr {
   border-width: 7px;
   width: 10%;
 }
-h1 {
-  color: #66BFBF;
-  margin-top: 0;
+
+nav {
+  padding: 20px;
+  background-color: rgb(126,102,163);
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+
+
 }
-h2 {
-  color: #66BFBF;
+
+nav a {
+
+  color: #2A1B3D;
+  font-family: 'Muli', sans-serif;
 }
-h3 {
-  color: #66BFBF
-  }
+
+
+
 
   /*********CLASS INDICATORS********/
-  .middle-container {
-   width: 200px;
-   height: 200px;
-    background-color: red;
-  }
-  .bottom-container {
-   width: 200px;
-   height: 200px;
-    background-color: blue;
-  }
+
+.profile-img {
+  width: 15%;
+  display: flex;
+  padding: 10px;
+  margin-left: 30px;
+}
+
+.profile-img img {
+  width: 100%;
+  display: block;
+}
+
+.hamburger {
+height: 100px;
+padding-right: 40px;
+}
+
+.intro {
+  display: block;
+  margin: 50px 20px;
+  text-align: center;
+}
+
+.intro h2, h3 {
+  margin: 40px;
+
+}
+
+
+
+/***************MOBILE STYLES*********/
