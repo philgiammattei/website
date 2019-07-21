@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
   <meta charset="utf-8">
-  <title>Phil Giammattei</title>
-  <meta name="description" content="Web Developer, iOS Developer, Designer,
-    Musician.">
+  <title>Minesweeper</title>
+  <meta name="description" content="Minecraft and Minesweeper combine!  Uses JavaScript and DOM Manipulation.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/minesweeper.css">
   <link rel="icon" href="favicon.ico" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
   <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
 
 </head>
@@ -34,6 +42,9 @@
   </ul>
 </nav>
 
+
+
+
 <div class="gamecontainer">
   <div class="gamescore">
     <h4 id = "bombsleft">Creepers Left: </h4>
@@ -49,15 +60,45 @@
   </div>
 </div>
 
+<div class="minesweeper-intro">
+  <h3>Introducing</h3>
+  <h1>MINECRAFT: Creeper Sweeper!</h1>
+  <h3>(or, "Mine-Sweeper" for short)</h3>
 
+  <hr>
+
+  <h4 style = "margin: 50px 0;">Microsoft's classic Minesweeper, with Minecraft art and sound.</h4>
+
+  <p>Break stone blocks to find treasure, but watch out for creepers.</p>
+
+  <p>The type of block you discover will give you clues to nearby creepers.</p>
+
+  <p>The number in each block corresponds to the number of creepers nearby (diagonals count!).  Use deduction (or good guesses) to steer clear of danger.</p>
+
+  <p>Click/tap a stone block to mark a suspected creeper block with redstone.  hold to break it, revealing what's underneath.</p>
+
+  <p>You win when you break every block but the creeper blocks!  The Creeper Counter will track your progress, but only if you accurately use the redstone markers.</p>
+
+  <p>You lose if you discover a creeper.</p>
+
+  <p>MINECRAFT and Minesweeper are the intellectual property of Microsoft.  </p>
+
+  <h4><a href="minesweeper-project.html"> How It's Made </a></h4>
+</div>
 
 
 <script src="scripts/minesweeper/minesweeper.js"></script>
 
 <footer>
-  <a href="https://twitter.com/philgiammattei">Twitter</a>
-  <a href="https://www.linkedin.com/in/philgiammattei/">LinkedIn</a>
-  <a href="https://github.com/philgiammattei">GitHub</a>
+<a href="https://www.linkedin.com/in/philgiammattei/">
+  <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+</a>
+<a href="https://github.com/philgiammattei">
+  <img src="images/github-logo.png" alt="Github: philgiammattei">
+</a>
+<a href="https://twitter.com/philgiammattei">
+  <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+</a>
 </footer>
 <script type="text/javascript">
 function menuToggle() {

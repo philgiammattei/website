@@ -89,7 +89,7 @@ function createGUI() {
 
 
   canvas.style.width = canvas.offsetWidth + "px";
-  canvas.style.height = canvas.offsetWidth + "px";
+  canvas.style.height = (canvas.offsetWidth / cols * rows) + "px";
   let canvasWidth = canvas.offsetWidth;
   let canvasHeight = canvas.offsetHeight;
 
@@ -181,6 +181,11 @@ function blockBreak(id) {
   let cell = document.getElementById(id);
   let x = id.match(/[0-9]+/g)[0], y = id.match(/[0-9]+/g)[1];
   let cellstate = state[x][y];
+  let breaksounds = [sounds.break1,sounds.break2,sounds.break3];
+  let breakaudio1 = new Audio(breaksounds[0]);
+  let breakaudio2 = new Audio(breaksounds[1]);
+  let breakaudio3 = new Audio(breaksounds[2]);
+  let breakaudio = [breakaudio1, breakaudio2, breakaudio3];
 
   cellstate.breaks = 0;
   if (!cellstate.flag && !cellstate.revealed) {
@@ -188,7 +193,7 @@ function blockBreak(id) {
       interval = window.setInterval(() => {
         if(mouseDown) {
           cell.style.background = images[`break${cellstate.breaks}`];
-
+          if (sound) breakaudio[Math.floor(Math.random()*3)].play();
           cellstate.breaks++;
         }
         if (cellstate.breaks > 9) {
@@ -255,6 +260,7 @@ function flag(id) {
 
 function reveal (x,y, gameover) {
   let cellstate = state[x][y];
+  let revealsound = new Audio(sounds.reveal);
   if (!cellstate.revealed) {
     let cell = document.getElementById(cellstate.id);
     cellstate.revealed = true;
@@ -264,7 +270,11 @@ function reveal (x,y, gameover) {
         gameOver(x,y);
       }
     }
-    else if (cellstate.nearby > 0) {cell.style.background = images["nearby"+cellstate.nearby];}
+    else if (cellstate.nearby > 0) {
+      if (sound) revealsound.play();
+
+      cell.style.background = images["nearby"+cellstate.nearby];
+    }
     else if (cellstate.nearby == 0) {
       cell.style.background = images.nearby0;
       revealnearby(x,y);
@@ -282,14 +292,18 @@ function bombFlag(state) {
 function revealnearby(x,y) {
   x = parseInt(x);
   y = parseInt(y);
-  if (x > 0)reveal(x-1,y,false);
-  if (x > 0 && y > 0) reveal(x-1,y-1,false);
-  if (y > 0) reveal(x,y-1,false);
-  if (x < cols - 1 && y > 0) reveal(x+1,y-1,false);
-  if (x < cols - 1)reveal(parseInt(x)+1,y,false);
-  if (x < cols - 1 && y < rows - 1) reveal(x+1,y+1,false);
-  if (y < rows - 1) reveal(x,y+1,false);
-  if (x > 0 && y < rows - 1) reveal(x-1,y+1,false);
+  let revealsound = new Audio(sounds.reveal);
+  let revealtimer = setTimeout(()=> {
+    if (sound) revealsound.play();
+    if (x > 0)reveal(x-1,y,false);
+    if (x > 0 && y > 0) reveal(x-1,y-1,false);
+    if (y > 0) reveal(x,y-1,false);
+    if (x < cols - 1 && y > 0) reveal(x+1,y-1,false);
+    if (x < cols - 1)reveal(parseInt(x)+1,y,false);
+    if (x < cols - 1 && y < rows - 1) reveal(x+1,y+1,false);
+    if (y < rows - 1) reveal(x,y+1,false);
+    if (x > 0 && y < rows - 1) reveal(x-1,y+1,false);
+  },300);
 }
 
 function gameOver(x,y) {

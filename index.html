@@ -6,24 +6,50 @@
   <title>Phil Giammattei</title>
   <meta name="description" content="Web Developer, iOS Developer, Designer,
     Musician.">
+
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="icon" href="favicon.ico" />
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
   <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 <header>
-  <div class="profile-img">
-    <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" /></a>
+  <div class="header-container">
+    <div class="profile-img">
+      <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" />
+    </div>
+    <h1 class="profile-header">Phil Giammattei</h1></a>
+    <a href="javascript: void(0);" class="icon hamburger" onclick="menuToggle()">
+      <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+  </a>
   </div>
-  <h1 class="profile-header">Phil Giammattei</h1>
-  <a href="javascript: void(0);" class="icon" onclick="menuToggle()">
-    <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
-</a>
+
+<div class="socialbuttons">
+
+  <a href="https://www.linkedin.com/in/philgiammattei/">
+    <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+  </a>
+  <a href="https://github.com/philgiammattei">
+    <img src="images/github-logo.png" alt="Github: philgiammattei">
+  </a>
+  <a href="https://twitter.com/philgiammattei">
+    <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+  </a>
+</div>
 
 </header>
-<nav id="nav">
+<nav class="nav">
   <ul class="main-nav">
     <li><a href="index.html">HOME</a></li>
     <li><a href="about.html">ABOUT</a></li>
@@ -33,56 +59,52 @@
   </ul>
 </nav>
 
+
+</div>
 <div class="intro">
   <h2>Hi there!  I'm <em>Phil.</em> </h2>
-  <!-- sound wave svg - make!-->
-  <h3>I make <span class="coolstyle1">Websites</span>, <span class="coolstyle2">
-    iOS apps,</span> and <span class="coolstyle3">Music</span>.</h3>
+  <hr>
+  <h3>I am a versatile and curious developer and designer.</h3>
   <a href="contact.html"> <button type="button" name="contactbutton">
-    Let's talk.</button></a>
+    <h6>Let's talk.</button></h6></a>
 </div>
-
-<div class="projects">
   <h2>Projects:</h2>
+<div class="projects">
+
   <div class="project">
-    KerfCase.com
+    <div class="overlay"></div>
+    <a href="kerfcase.html">
+    <img src="images/kerfcase-cover.png" alt="kerfcase">
+    <h3>KerfCase.com</h3>
+    </a>
   </div>
   <div class="project">
-    <a href="minesweeper.html">Minesweeper</a> 
+    <div class="overlay"></div>
+    <a href="minesweeper.html">
+    <img src="images/minesweeper-cover.png" alt="minesweeper">
+      <h3>Minesweeper</h3>
+    </a>
   </div>
   <div class="project">
-    giammattei.co
+    <div class="overlay"></div>
+    <a href="giammattei.html" alt="giammattei.co">
+      <img src="images/giammattei-co-cover.png" alt="giammattei.co">
+      <h3>giammattei.co</h3>
+    </a>
+
   </div>
 
 </div>
   <div class="recentblog">
     <h2>Most Recent Blog Post</h2>
-    <h4> <a href="blog.html">Read more</a> </h4>
+    <h4><a href="blog.html"> See All</a> </h4>
 
     <article>
     <header class="blogheader">
       <h3>Hello, World!</h3>
-      <h4>Phil Giammattei</h4>
-      <h4> <time>May 22, 2019</time> </h4>
+
     </header>
-  <p>I’ve written the “Your First Program” program a few times now, and in a
-    few different languages.  Whether you *include your stdio, or get right to
-    the System.out.print()ing, it usually doesn’t take long for a working
-    program in a given language to be checked off your list.  The hard part
-    comes later, and can be very overwhelming.</p>
 
-  <p>I resisted majoring in Computer Science in college (and had more than one
-    occasion to turn it down), and part of me has always wondered where I’d be if
-    I had stuck with it.  I’ve had a long and varied career, interacting with very
-     smart and resourceful coworkers and using my technical knowhow and soft
-     skills to teach tough concepts to unfamiliar minds.  I have no regrets.</p>
-
-  <p>I have had, though, new responsibilities that exposed me to the world of
-    code.  A teammate left my company, and maintaining our large and ungainly
-    website became my problem.  At first, I knew just enough HTML and if/else
-    logic to keep the shoestring and duct tape operation functioning normally,
-    but I began wishing I had the tools and knowhow to improve the backend and
-    make it run more smoothly and predictably.</p>
 
   <p>In my spare time I started to teach myself computer science, coding, and
     software development, through a combination of books, online videos, and
@@ -92,26 +114,20 @@
     distraction-prone environment, and attacking a problem from multiple angles
     (to name a few) – are skills that I’ve been actively honing for 10 years.</p>
 
-  <p>In years past I’ve sometimes fantasized about going back to school and
-    getting a CS degree.  A simple truth has been revealed to me recently that
-    has energized my thinking: I don’t have to do that.  The cornucopia of
-    resources available, for free, to anyone with determination and discipline
-    are enough to fully master a valuable skill and open up one’s horizons,
-    without the 6 figures of debt.</p>
-
-  <p>I started this site to chronicle my journey into code, show off my
-    projects, and maybe one day help others to take the leap and learn what you
-    can do if you open up your terminal and start typing.</p>
-
-  <p>Hello, world!</p>
+  <h4><a href="helloworld.html">Read More...</a></h4>
 
     </article>
   </div>
-
   <footer>
-    <a href="https://twitter.com/philgiammattei">Twitter</a>
-    <a href="https://www.linkedin.com/in/philgiammattei/">LinkedIn</a>
-    <a href="https://github.com/philgiammattei">GitHub</a>
+  <a href="https://www.linkedin.com/in/philgiammattei/">
+    <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+  </a>
+  <a href="https://github.com/philgiammattei">
+    <img src="images/github-logo.png" alt="Github: philgiammattei">
+  </a>
+  <a href="https://twitter.com/philgiammattei">
+    <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+  </a>
   </footer>
 <script type="text/javascript">
   function menuToggle() {

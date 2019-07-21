@@ -13,13 +13,24 @@ font-family: 'Play', sans-serif;
 
 body {
   background-color: #2A1B3D;
+  max-width: 100%;
+  height: 100%;
   margin: 0;
+  padding: 20px;
+
+  text-align: center;
+  margin: auto;
 }
 
-p, h1, h2, h3, h4, h5, h6, li {
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FCFBE3;
+  font-family: 'Play', sans-serif;
+}
+
+p,li,a {
   color: #FCFBE3;
   font-family: 'Muli', sans-serif;
-
 }
 
 a:link {
@@ -41,44 +52,80 @@ a:active {
   text-decoration:underline;
   color: #b3b6a4;
 }
+button {
+  background-image: linear-gradient(to right, #D83F87 , rgb(126,102,163));
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+
+}
+button h6 {
+  font-size: 1em;
+  color: #2A1B3D;
+}
 
 header {
   display: flex;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 200px;
+  height: 75px;
 }
 
 header h1 {
-  font-size: 70px;
+  font-size: 30px;
   font-family: 'Play', sans-serif;
-  padding: 0 20px 0 20px;
+
 }
 
 hr {
-  background-color: #eeeeee;
-  border-style: none;
-  border-top-style: dotted;
-  border-color: grey;
-  border-width: 7px;
-  width: 10%;
+  display: block;
+  background-image: url(../images/waveform.svg);
+  background-repeat:no-repeat;
+  background-position: center;
+  height: 30px;
+  border:0;
 }
 
 nav {
-  padding: 20px;
-  background-color: rgb(126,102,163);
+  width: 30%;
+  position:absolute;
+  right:0;
+  text-align: right;
+  padding: 20px 20px 10px 20px;
+  background-image: linear-gradient(to right, #2A1B3D , rgb(126,102,163));
+  border-radius: 0 0 15px 0;
   display: none;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-end;
-
-
+}
+nav ul li {
+  list-style: none;
+  margin-bottom:10px;
+  color: #2A1B3D;
 }
 
-nav a {
-
+nav ul li a:link,a:hover,a:visited,a:active {
   color: #2A1B3D;
   font-family: 'Muli', sans-serif;
+}
+
+em {
+  font-style:normal;
+  font-size:1.5em;
+  color: rgb(126,102,163);
+}
+footer {
+  margin: 50px auto;
+  display: flex;
+  max-width:50%;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
+}
+footer a img {
+  height: 40px;
 }
 
 
@@ -87,20 +134,38 @@ nav a {
   /*********CLASS INDICATORS********/
 
 .profile-img {
-  width: 15%;
+
   display: flex;
-  padding: 10px;
-  margin-left: 30px;
+  padding: 0px;
+  max-width:50px;
+  flex: 1
+
 }
 
 .profile-img img {
   width: 100%;
   display: block;
+
+}
+
+.profile-header {
+  flex:2;
 }
 
 .hamburger {
-height: 100px;
-padding-right: 40px;
+max-width: 50px;
+display: block;
+flex:1;
+}
+
+.blogheader {
+  display: block;
+}
+.header-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
 }
 
 .intro {
@@ -114,6 +179,103 @@ padding-right: 40px;
 
 }
 
+.projects {
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+.project {
+  max-width: 100%;
+  margin:30px 10px 0;
+  position: relative;
+
+}
+.project .overlay {
+  display: none;
+  position:absolute;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,.5);
+}
+.project:hover {
+  .overlay {
+    display: block;
+  }
+
+}
+.project img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border:1px solid #b3b6a4;;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.socialbuttons {
+  display: none;
+}
 
 
-/***************MOBILE STYLES*********/
+
+/***************DESKTOP STYLES*********/
+@media only screen and (min-width: 500px){
+    body {
+      max-width: 1000px;
+    }
+    header {
+    justify-content: space-between;
+
+    height: 81px;
+    }
+    .profile-img {
+      margin-right: 20px;
+      z-index: 1;
+    }
+    header h1 {
+      font-size:40px;
+      text-align: left;
+      style:inline;
+    }
+    nav {
+      display: flex;
+      width:100%;
+      position:relative;
+      top:-20px;
+      background-image: linear-gradient(to right,rgb(126,102,163,#2A1B3D));
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+    nav ul li {
+      display: inline;
+      margin-left:20px;
+    }
+    .hamburger {
+      display: none;
+      width: 0;
+    }
+    .header-container {
+      justify-content: flex-start;
+    }
+    .projects {
+      display: flex;
+      justify-content: space-between;
+
+    }
+    .project {
+      max-width: 300px;
+    }
+    .socialbuttons {
+      display: flex;
+      justify-content: space-between;
+      width: 100px;
+    }
+    .socialbuttons a img {
+      height: 20px;
+    }
+  }
+}
