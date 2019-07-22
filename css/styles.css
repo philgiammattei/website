@@ -24,11 +24,7 @@ body {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
-  color: #FCFBE3;
-  font-family: 'Play', sans-serif;
-  margin-bottom: 30px;
-}
+
 
 p,li,a {
   color: #FCFBE3;
@@ -55,6 +51,29 @@ a:active {
   text-decoration:underline;
   color: #EB9FC3;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  color: #FCFBE3;
+  font-family: 'Play', sans-serif;
+  margin-bottom: 30px;
+
+}
+
+h1 {
+  font-size: 4em;
+}
+h2 {
+  font-size: 3.5em;
+}
+h3 {
+  font-size: 3em;
+}
+h4,h5,h6 {
+  font-size: 2.5em;
+}
+
+
+
 button {
   background-image: linear-gradient(to right, #D83F87 , rgb(126,102,163));
   border: none;
@@ -73,11 +92,11 @@ header {
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  height: 75px;
+  height: 100px;
 }
 
 header h1 {
-  font-size: 100px;
+  font-size: 85px;
   font-family: 'Play', sans-serif;
   margin:0;
 
@@ -88,7 +107,7 @@ hr {
   background-image: url(../images/waveform.svg);
   background-repeat:no-repeat;
   background-position: center;
-  height: 30px;
+  height: 100px;
   border:0;
   margin-bottom: 30px;
 }
@@ -202,14 +221,15 @@ flex:1;
 .projects {
 
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(500px);
 }
 .project {
-  max-width: 100%;
+  width: 100%;
   margin:30px 10px 0;
   position: relative;
 
 }
+
 .project .overlay {
   display: none;
   position:absolute;
@@ -227,9 +247,9 @@ flex:1;
 }
 .project img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
-  border:1px solid #b3b6a4;
+  border:3px solid #b3b6a4;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
@@ -253,6 +273,9 @@ flex:1;
     body {
       max-width: 1000px;
     }
+    button h6 {
+      font-size: 2em;
+    }
     header {
     justify-content: space-between;
 
@@ -262,10 +285,26 @@ flex:1;
       margin-right: 20px;
       z-index: 1;
     }
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      font-size: 2em;
+    }
+    h3  {
+      font-size: 1.5em;
+    }
+    h4, h5, h6 {
+      font-size: 1em;
+    }
     header h1 {
       font-size:40px;
       text-align: left;
       style:inline;
+    }
+    hr {
+      height: 30px;
+      width: 100%;
     }
     nav {
       display: flex;
