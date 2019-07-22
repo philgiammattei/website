@@ -93,6 +93,8 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 100px;
+  margin-bottom: 100px;
+  margin-top:50px;
 }
 
 header h1 {
@@ -109,11 +111,12 @@ hr {
   background-position: center;
   height: 100px;
   border:0;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  margin-top: 70px;
 }
 
 nav {
-  width: 50%;
+  width: 90%;
   position:absolute;
   right:0;
   text-align: right;
@@ -125,16 +128,19 @@ nav {
   flex-wrap: wrap;
   justify-content: flex-end;
   z-index: 2;
+
 }
 nav ul li {
   list-style: none;
   margin-bottom:10px;
   color: #2A1B3D;
+
 }
 
 nav ul li a:link,nav  ul li  a:hover,nav  ul li  a:visited,nav  ul li  a:active {
   color: #2A1B3D;
   font-family: 'Muli', sans-serif;
+  font-size: 2em;
 }
 
 em {
@@ -213,7 +219,8 @@ flex:1;
 }
 .img-content {
   max-width: 80%;
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+  margin-top: 70px;
   border-radius: 10px;
   z-index: 0;
 }
@@ -225,7 +232,7 @@ flex:1;
 }
 .project {
   width: 100%;
-  margin:30px 10px 0;
+  margin:30px auto 0;
   position: relative;
 
 }
@@ -249,6 +256,7 @@ flex:1;
   display: block;
   width: 100%;
   height: auto;
+  margin: auto;
   border:3px solid #b3b6a4;
   border-radius: 10px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -258,7 +266,7 @@ flex:1;
   width:50%;
   margin: 0 auto 40px;
 }
-.skillslist h3{
+.skillslist h4{
   margin: 0 0 10px 25px;
   text-align: left;
 }
@@ -297,6 +305,9 @@ flex:1;
     h4, h5, h6 {
       font-size: 1em;
     }
+    header {
+      margin-bottom: 0;
+    }
     header h1 {
       font-size:40px;
       text-align: left;
@@ -322,6 +333,11 @@ flex:1;
       display: inline;
       margin-left:20px;
     }
+    nav ul li a:link,nav  ul li  a:hover,nav  ul li  a:visited,nav  ul li  a:active {
+      color: #2A1B3D;
+      font-family: 'Muli', sans-serif;
+      font-size: 1.5em;
+    }
     p,li,a {
       color: #FCFBE3;
       font-family: 'Muli', sans-serif;
@@ -329,6 +345,7 @@ flex:1;
     }
     .img-content {
       max-width: 500px;
+      margin: 30px auto 30px;
     }
     .hamburger {
       display: none;
