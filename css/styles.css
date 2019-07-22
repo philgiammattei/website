@@ -247,7 +247,7 @@ flex:1;
 
 
 /***************DESKTOP STYLES*********/
-@media only screen and (min-width: 500px){
+@media only screen and (min-device-width: 500px){
     body {
       max-width: 1000px;
     }
