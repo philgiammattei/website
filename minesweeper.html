@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <title>Minesweeper</title>
+  <title>Minesweeper - Phil Giammattei</title>
   <meta name="description" content="Minecraft and Minesweeper combine!  Uses JavaScript and DOM Manipulation.">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/minesweeper.css">
@@ -22,25 +22,40 @@
 </head>
 
 <body>
-<header>
-  <div class="profile-img">
-    <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" /></a>
-  </div>
-  <h1 class="profile-header">Phil Giammattei</h1>
-  <a href="javascript: void(0);" class="icon" onclick="menuToggle()">
-    <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
-</a>
+  <header>
+    <div class="header-container">
+      <div class="profile-img">
+        <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" />
+      </div>
+      <h1 class="profile-header">Phil Giammattei</h1></a>
+      <a href="javascript: void(0);" class="icon hamburger" onclick="menuToggle()">
+        <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+    </a>
+    </div>
 
-</header>
-<nav id="nav">
-  <ul class="main-nav">
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="projects.html">PROJECTS</a></li>
-    <li><a href="blog.html">BLOG</a></li>
-    <li><a href="Contact.html">CONTACT</a></li>
-  </ul>
-</nav>
+  <div class="socialbuttons">
+
+    <a href="https://www.linkedin.com/in/philgiammattei/">
+      <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+    </a>
+    <a href="https://github.com/philgiammattei">
+      <img src="images/github-logo.png" alt="Github: philgiammattei">
+    </a>
+    <a href="https://twitter.com/philgiammattei">
+      <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+    </a>
+  </div>
+
+  </header>
+  <nav id="nav">
+    <ul class="main-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="Contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
 
 
 
@@ -71,17 +86,17 @@
 
   <p>Break stone blocks to find treasure, but watch out for creepers.</p>
 
-  <p>The type of block you discover will give you clues to nearby creepers.</p>
+  <p>The blocks you reveal will tell you the number of creepers nearby(diagonals count!).</p>
 
-  <p>The number in each block corresponds to the number of creepers nearby (diagonals count!).  Use deduction (or good guesses) to steer clear of danger.</p>
+  <p>Use deduction (or good guesses) to steer clear of danger.</p>
 
   <p>Click/tap a stone block to mark a suspected creeper block with redstone.  hold to break it, revealing what's underneath.</p>
 
-  <p>You win when you break every block but the creeper blocks!  The Creeper Counter will track your progress, but only if you accurately use the redstone markers.</p>
+  <p>You win when you break every block but the creeper blocks!  The Creeper Counter will track your progress.</p>
 
   <p>You lose if you discover a creeper.</p>
 
-  <p>MINECRAFT and Minesweeper are the intellectual property of Microsoft.  </p>
+  <p>MINECRAFT and Minesweeper are the intellectual property of Mojang and Microsoft.  </p>
 
   <h4><a href="minesweeper-project.html"> How It's Made </a></h4>
 </div>

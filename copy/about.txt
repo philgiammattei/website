@@ -1,0 +1,37 @@
+Hello! My name is Phil Giammattei.
+
+That's pronounced
+
+[ghee a ma tee]
+
+I live in Pittsburgh with my wife and two cats.
+
+I am a versatile developer in search of new career experiences.
+
+SKILLS
+HTML/CSS
+JavaScript
+Shopify/Liquid
+Swift
+Java
+Adobe Suite
+Microsoft Excel
+
+STRENGTHS
+I am a skilled communicator, both written and verbal.  I understand the importance of storytelling and presentation when persuading or informing. I am capable of expressing complex thoughts in simple terms, which I have used in teaching and mentoring roles to great effect.
+
+I am a skilled learner, capable of quickly and efficiently absorbing information and processes, discerning when it is necessary to have a robust theoretical framework and when it is more expedient to learn by steps. I document my learning process such that my notes can be useful for future learners.
+
+I am a good team member, who is aware of the capabilities and bandwidth of my teammates and plans my own work for maximum utility.  I strive to have consistent output that can be relied upon confidently.
+
+EXPERIENCE
+I am presently employed at KerfCase LLC.  Kerf is a design firm, specialty manufacturer, and e-commerce company that designs, makes and sells fine wood goods.  Our flagship product is an all-wood phone case.
+
+I was hired to assist in production work, and eventually grew to oversee day-to-day operations of the company.  During my time at Kerf, I have been responsible for such disparate domains as customer service, graphic design, SEO, social media marketing, blogging, financial forecasting, design engineering, and website maintenance, along with the production work necessary to fulfill hundreds of orders a month.
+
+As I began learning programming, I volunteered to lead a visual overhaul of our website that had long been planned, and that would have required outsourcing to a contractor otherwise.  I was able to learn a great deal about the practicalities of web development, gain real-world experience, and save the company thousands of dollars.  In addition to the development work, I led the design and deployment process and supplied most of the written content needed.
+
+Prior to Kerf, I have worked at Google, Oracle, and Apple, in a variety of roles.  One of my mottos is "Versatility over Virtuosity"; in a world that favors hyperspecialization, having a working knowledge of many domains can be very valuable. I am equally at ease communicating technical requirements to engineers as I am discussing business priorities with executives and brainstorming with creatives.
+
+HOBBIES
+I'm a musician!  I play a lot of instruments and enjoy a variety of styles, but primarily I play bass and sing for Pittsburgh rock band Bad Custer.  I'm looking forward to making a website for the band in the near future, as well as an iOS app that's mostly done.  In addition, I'm looking forward to learning how to process sound programatically so I can explore musical composition using computers.

@@ -20,7 +20,7 @@ src: url("../fonts/minecrafter.woff") format("woff");
 
 .gamescore h4 {
   display: inline;
-  font-size: 2em;
+  font-size: 1em;
   font-family: 'minecrafter', 'Muli', sans-serif;
 }
 .minesweeper-intro {
@@ -64,7 +64,7 @@ src: url("../fonts/minecrafter.woff") format("woff");
   margin-top: 25%;
   margin-bottom: 20%;
   font-family: 'minecrafter', 'Muli', sans-serif;
-  font-size: 8em;
+  font-size: 2em;
   text-align: center;
   color: white;
 }
@@ -72,8 +72,20 @@ src: url("../fonts/minecrafter.woff") format("woff");
 #gameover h3 {
 
   font-family: 'minecrafter', 'Muli', sans-serif;
-  font-size: 4em;
+  font-size: 2em;
   text-align: center;
   color: white;
   text-decoration: underline;
+}
+
+@media screen and (min-width: 500px) {
+  #gameover h1 {
+    font-size: 6em;
+  }
+  #gameover h3 {
+    font-size: 4em;
+  }
+  .gamescore h4 {
+    font-size: 2em;
+  }
 }

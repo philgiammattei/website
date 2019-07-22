@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>KerfCase.com - Phil Giammattei</title>
+  <meta name="description" content="Describes the visual rebrand project for kerfcase.com undertaken by Phil Giammattei">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="profile-img">
+      <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" />
+    </div>
+    <h1 class="profile-header">Phil Giammattei</h1></a>
+    <a href="javascript: void(0);" class="icon hamburger" onclick="menuToggle()">
+      <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+  </a>
+  </div>
+
+  <div class="socialbuttons">
+
+    <a href="https://www.linkedin.com/in/philgiammattei/">
+      <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+    </a>
+    <a href="https://github.com/philgiammattei">
+      <img src="images/github-logo.png" alt="Github: philgiammattei">
+    </a>
+    <a href="https://twitter.com/philgiammattei">
+      <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+    </a>
+  </div>
+
+  </header>
+  <nav id="nav">
+    <ul class="main-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="Contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+<!--content goes here!-->
+
+I've been an employee of KerfCase LLC since October of 2016. Working at a combination specialty wood shop and ecommerce company is a great way to pick up a lot of different skills, and during my time there I have learned a lot about small-batch production, online marketing, and how a small business functions.
+
+KerfCase's website is built on the Shopify platform, which is a robust template-based platform that allows for both WYSIWYG editing and direct code manipulation.  Over the years, many developers and contractors have built on our theme, adding features and tweaking performance.  Without having a developer on staff, we were locked in to the basic look and functionality of the site, since a fundamental overhaul would be prohibitively expensive.
+
+As Kerf grew and began to diversify its product line, we reached a point where we wanted to change our branding to reflect our new identity.  We hired a graphic designer to revise our logo and come up with a consistent visual and design language for our brand, including colors, typefaces, and layouts.  The hope was that we would then hire a web developer on contract to apply these changes to our site.
+
+As luck would have it, I had begun studying programming, and felt confident that it would be great for my professional development, and much less expensive for the company, for me to take on the task of totally visually overhauling our site.  Work began in May 2019 and the revamped design went live in July of 2019.  Along the way I learned a lot about project planning, the software deployment process, and the quirks and tricks of managing a large production site.
+
+Key features:
+
+Mobile first
+Mobile traffic forms the majority of our page views, so I began my design and style work focusing exclusively on mobile, coming around to desktop layouts late in the process.  This helped me create consistent visuals and utility across the site, and made responsive design simple to implement.
+
+Grids
+Our graphic and user interface designers came up with a variety of grids and grid-based layouts to create a consistent and aesthetically pleasing interface. I had a lot of fun using photoshop and CSS to reproduce their mockups down to the pixel.
+
+Menus and overlays
+Creating dynamic menus and information-rich hover overlays gave our site a new dimension, and our users a quick way to get their bearings.  I learned a lot about JavaScript and the DOM when implementing these features, but used pure CSS when possible.
+
+
+
+
+<!--content ends here!-->
+
+
+  <footer>
+  <a href="https://www.linkedin.com/in/philgiammattei/">
+    <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+  </a>
+  <a href="https://github.com/philgiammattei">
+    <img src="images/github-logo.png" alt="Github: philgiammattei">
+  </a>
+  <a href="https://twitter.com/philgiammattei">
+    <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+  </a>
+  </footer>
+<script type="text/javascript">
+  function menuToggle() {
+    var menu = document.getElementById("nav");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
+</body>
+
+</html>

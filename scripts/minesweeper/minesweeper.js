@@ -40,11 +40,11 @@ let images = {
 
 let sounds = {
   creepersound: "scripts/minesweeper/sounds/creeper.mp3",
-  break1: "scripts/minesweeper/sounds/stone1.ogg",
-  break2: "scripts/minesweeper/sounds/stone2.ogg",
-  break3: "scripts/minesweeper/sounds/stone3.ogg",
-  reveal: "scripts/minesweeper/sounds/stone4.ogg",
-  flag: "scripts/minesweeper/sounds/wet_grass1.ogg"
+  break1: "scripts/minesweeper/sounds/stone1.mp3",
+  break2: "scripts/minesweeper/sounds/stone2.mp3",
+  break3: "scripts/minesweeper/sounds/stone3.mp3",
+  reveal: "scripts/minesweeper/sounds/stone4.mp3",
+  flag: "scripts/minesweeper/sounds/wet_grass1.mp3"
 }
 
 let canvasReset = `<div id="gameoversplash">

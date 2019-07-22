@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>giammattei.co - Phil Giammattei</title>
+  <meta name="description" content="Phil Giammattei describes making giammattei.co for Phil Giammattei">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="profile-img">
+      <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" />
+    </div>
+    <h1 class="profile-header">Phil Giammattei</h1></a>
+    <a href="javascript: void(0);" class="icon hamburger" onclick="menuToggle()">
+      <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+  </a>
+  </div>
+
+  <div class="socialbuttons">
+
+    <a href="https://www.linkedin.com/in/philgiammattei/">
+      <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+    </a>
+    <a href="https://github.com/philgiammattei">
+      <img src="images/github-logo.png" alt="Github: philgiammattei">
+    </a>
+    <a href="https://twitter.com/philgiammattei">
+      <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+    </a>
+  </div>
+
+  </header>
+  <nav id="nav">
+    <ul class="main-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="Contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+<!--content goes here!-->
+
+
+It was evident from the start that if I wanted to be a web developer, the best way to do that would be to make a website.
+
+Though there are lots and lots of tools and platforms for creating websites available now, none offer the total control that you get from putting your hands directly on the HTML and CSS of something you spun from whole cloth.
+
+Not to mention the cost savings: Squarespace costs roughly as much as a Netflix subscription, whereas there are services that offer hosting for static sites absolutely free, and a domain name can be rented for pennies a month.
+
+It turns out that making a good-looking, responsive, content-rich website in 2019 is a lot of work!  Who'd have thunk it?  But the process of starting with a blank text document and building up a portfolio piece-by-piece has been a deeply rewarding experience.
+
+giammattei.co is a mobile site with media queries for desktop users.  I got the advice that mobile-first was a great way to tackle responsive design, and it did make it very easy to create a good-looking layout, then tweak individual elements for a beautiful desktop presentation.
+
+So far JavaScript use is limited to the mobile "hamburger menu" and some form logic (if you ignore the game made entirely in JavaScript), but I want to do more with it as I improve the site.  I'm a big fan of the way Apple uses JavaScript to fade-in or move screen elements as you scroll, and I want to learn more about that as I go.
+
+I've focused on learning fundamentals, so no dependencies or frameworks are currently in use.  If I decide to do a deep dive into Bootstrap or something similar, it might be a fun project to refactor the site.  Maybe one day!
+
+My minimum viable product for this page is that the copy is up and all the links work.  I plan on tweaking it going forward to ensure that it's as content-rich as possible, and will be adding new blog posts regularly.
+
+
+
+<!--content ends here!-->
+
+
+  <footer>
+  <a href="https://www.linkedin.com/in/philgiammattei/">
+    <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+  </a>
+  <a href="https://github.com/philgiammattei">
+    <img src="images/github-logo.png" alt="Github: philgiammattei">
+  </a>
+  <a href="https://twitter.com/philgiammattei">
+    <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+  </a>
+  </footer>
+<script type="text/javascript">
+  function menuToggle() {
+    var menu = document.getElementById("nav");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
+</body>
+
+</html>

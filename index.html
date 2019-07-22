@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Phil Giammattei</title>
-  <meta name="description" content="Web Developer, iOS Developer, Designer,
+  <meta name="description" content="Developer, Designer,
     Musician.">
 
   <link rel="stylesheet" href="css/styles.css">
@@ -49,7 +49,7 @@
 </div>
 
 </header>
-<nav class="nav">
+<nav id="nav">
   <ul class="main-nav">
     <li><a href="index.html">HOME</a></li>
     <li><a href="about.html">ABOUT</a></li>
@@ -80,7 +80,7 @@
   </div>
   <div class="project">
     <div class="overlay"></div>
-    <a href="minesweeper.html">
+    <a href="minesweeper-project.html">
     <img src="images/minesweeper-cover.png" alt="minesweeper">
       <h3>Minesweeper</h3>
     </a>
@@ -131,6 +131,7 @@
   </footer>
 <script type="text/javascript">
   function menuToggle() {
+    console.log("toggle!");
     var menu = document.getElementById("nav");
     if (menu.style.display === "block") {
       menu.style.display = "none";
