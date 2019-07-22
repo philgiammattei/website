@@ -33,6 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 p,li,a {
   color: #FCFBE3;
   font-family: 'Muli', sans-serif;
+  font-size: 30px;
 }
 
 a:link {
@@ -76,7 +77,7 @@ header {
 }
 
 header h1 {
-  font-size: 30px;
+  font-size: 60px;
   font-family: 'Play', sans-serif;
   margin:0;
 
@@ -165,7 +166,7 @@ p {
 }
 
 .hamburger {
-max-width: 50px;
+max-width: 100px;
 display: block;
 flex:1;
 }
@@ -280,6 +281,11 @@ flex:1;
     nav ul li {
       display: inline;
       margin-left:20px;
+    }
+    p,li,a {
+      color: #FCFBE3;
+      font-family: 'Muli', sans-serif;
+      font-size: 1em;
     }
     .img-content {
       max-width: 500px;
