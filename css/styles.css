@@ -192,7 +192,15 @@ p {
 
 
   /*********CLASS INDICATORS********/
-
+.col2 {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.col {
+  max-width: 100%;
+}
 .profile-img {
 
   display: flex;
@@ -261,6 +269,9 @@ flex:1;
   margin:30px auto 0;
   position: relative;
 
+}
+.projectheading {
+  text-align:left;
 }
 
 .project .overlay {
@@ -372,6 +383,9 @@ flex:1;
       color: #FCFBE3;
       font-family: 'Muli', sans-serif;
       font-size: 1em;
+    }
+    .col {
+      max-width: 400px;
     }
     .img-content {
       max-width: 500px;
