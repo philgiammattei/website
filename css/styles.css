@@ -258,7 +258,10 @@ flex:1;
   border-radius: 10px;
   z-index: 0;
 }
+.minesweeper-intro p {
+  margin-bottom: 20px;
 
+}
 .projects {
 
   display: grid;
