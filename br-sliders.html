@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Phil Giammattei</title>
+  <meta name="description" content="Web Developer, iOS Developer, Designer,
+    Musician.">
+
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/brsliders.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="profile-img">
+      <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" />
+    </div>
+    <h1 class="profile-header">Phil Giammattei</h1></a>
+    <a href="javascript: void(0);" class="icon hamburger" onclick="menuToggle()">
+      <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+  </a>
+  </div>
+
+  <div class="socialbuttons">
+
+    <a href="https://www.linkedin.com/in/philgiammattei/">
+      <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+    </a>
+    <a href="https://github.com/philgiammattei">
+      <img src="images/github-logo.png" alt="Github: philgiammattei">
+    </a>
+    <a href="https://twitter.com/philgiammattei">
+      <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+    </a>
+  </div>
+
+  </header>
+  <nav id="nav">
+    <ul class="main-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="Contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+<!--content goes here!-->
+
+<div class="container">
+<img src="https://i.imgur.com/baTSSTG.png" id="0" class="sliderimg">
+<img src="https://i.imgur.com/etcIDEZ.png" id="1" class="sliderimg">
+<img src="https://i.imgur.com/YTsK5X0.png" id="2" class="sliderimg">
+<img src="https://i.imgur.com/bNxAnAd.png" id="3"  class="sliderimg"/>
+<img src="https://i.imgur.com/PXgWXKS.png" id="4"  class="sliderimg"/>
+<img src="https://i.imgur.com/Z118eUD.png" id="5"  class="sliderimg"/>
+<img src="https://i.imgur.com/AN5O73m.png" id="6"  class="sliderimg"/>
+<img src="https://i.imgur.com/JxKMBNu.png" id="7"  class="sliderimg"/>
+<img src="https://i.imgur.com/KGE720T.png" id="8"  class="sliderimg"/>
+<img src="https://i.imgur.com/cc78Gn3.png" id="9"  class="sliderimg"/>
+<img src="https://i.imgur.com/uhRM8OJ.png" id="10"  class="sliderimg"/>
+<img src="https://i.imgur.com/P2Wusag.png" id="11" class="sliderimg">
+<img src="https://i.imgur.com/P2Wusag.png" id="12" class="sliderimg">
+
+</div>
+<div class="slider">
+  <input type="range" min="0" max="11" value="0" class="slider" id="slider">
+</div>
+<p id="output">
+
+  </p>
+
+
+
+<!--content ends here!-->
+
+
+  <footer>
+  <a href="https://www.linkedin.com/in/philgiammattei/">
+    <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+  </a>
+  <a href="https://github.com/philgiammattei">
+    <img src="images/github-logo.png" alt="Github: philgiammattei">
+  </a>
+  <a href="https://twitter.com/philgiammattei">
+    <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+  </a>
+  </footer>
+  <script type="text/javascript">
+  let slider=document.getElementById("slider");
+  let output=document.getElementById("output");
+  let images = document.getElementsByClassName("sliderimg");
+  
+  output.innerHTML = slider.value;
+  images[0].style.display = "block";
+  slider.oninput = function () {
+    for (let i = 0; i < images.length; i++) {
+      if (i == slider.value) {
+        images[i].style.display = "block";
+      } else {
+        images[i].style.display = "none";
+      }
+    }
+    output.innerHTML = slider.value;
+  }
+  </script>
+
+
+<script type="text/javascript">
+  function menuToggle() {
+    var menu = document.getElementById("nav");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
+
+</body>
+
+</html>

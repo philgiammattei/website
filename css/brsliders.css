@@ -1,0 +1,11 @@
+.container {
+  width:100%;
+}
+.container img {
+  width: 100%;
+  display: none;
+}
+.slider {
+  text-align: center;
+  width: 50%;
+}
