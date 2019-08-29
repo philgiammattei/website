@@ -61,7 +61,7 @@
   </nav>
 
 <!--content goes here!-->
-
+<h1>CBRX Tile-Accurate Map Slider</h1>
 <div class="container">
 <img src="https://i.imgur.com/baTSSTG.png" id="0" class="sliderimg">
 <img src="https://i.imgur.com/etcIDEZ.png" id="1" class="sliderimg">
@@ -82,7 +82,7 @@
   <input type="range" min="0" max="11" value="0" class="slider" id="slider">
 </div>
 <p id="output">
-
+Part 0
   </p>
 
 
@@ -105,8 +105,7 @@
   let slider=document.getElementById("slider");
   let output=document.getElementById("output");
   let images = document.getElementsByClassName("sliderimg");
-  
-  output.innerHTML = slider.value;
+
   images[0].style.display = "block";
   slider.oninput = function () {
     for (let i = 0; i < images.length; i++) {
@@ -116,7 +115,7 @@
         images[i].style.display = "none";
       }
     }
-    output.innerHTML = slider.value;
+    output.innerHTML = "Part " + slider.value;
   }
   </script>
 

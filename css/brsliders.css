@@ -6,6 +6,9 @@
   display: none;
 }
 .slider {
-  text-align: center;
+  margin: 20px auto;
   width: 50%;
+}
+p {
+  text-align: center;
 }
