@@ -83,7 +83,7 @@
 
 <p>Minecraft is a game that uses a variety of square image elements.  Its gameplay also centers on digging down and avoiding randomly generated danger.  And the mechanic of holding a click or tap to break through a block over time solved my input problem.  Plus, all the assets I would need (including sound effects) were easy to obtain directly from the game! (My thanks to Mojang and Microsoft for my unauthorized use of their intellectual property.)</p>
 
-<p>I began by learning how to use JavaScript to create a grid of &lt;div&gt; elements, using for loops to assign each of them an ID that contained their x and y coordinates.  A two dimensional array of objects called state held all the information I needed for each block: whether it had been revealed, if it was a bomb(creeper!), how many bombs were nearby, and so on.</p>
+<p>I began by learning how to use JavaScript to create a grid of <code>&lt;div&gt;</code> elements, using for loops to assign each of them an ID that contained their x and y coordinates.  A two dimensional array of objects called <code>state</code> held all the information I needed for each block: whether it had been revealed, if it was a bomb(creeper!), how many bombs were nearby, and so on.</p>
 
 <p>Using regular expressions and the getElementById command, I was able to use several specialized functions to keep the visual state of each block and its logical state in sync, and some tricky timeout and event listener logic gave me the pointer interface I was looking for: tap once to "flag" a block, hold to reveal.</p>
 
