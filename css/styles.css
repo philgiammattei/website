@@ -264,8 +264,8 @@ flex:1;
 }
 .projects {
 
-  display: grid;
-  grid-template-columns: repeat(500px);
+  display: flex;
+  flex-wrap: wrap;
 }
 .project {
   width: 100%;

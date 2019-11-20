@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Phil Giammattei</title>
+  <meta name="description" content="Web Developer, iOS Developer, Designer,
+    Musician.">
+
+  <link rel="stylesheet" href="css/styles.css">
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png" />
+  <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png" />
+  <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png" />
+  <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png" />
+  <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png" />
+  <link href="https://fonts.googleapis.com/css?family=Muli|Play|Rubik|Signika&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+<header>
+  <div class="header-container">
+    <div class="profile-img">
+      <a href="index.html"><img  src="images/profile.png" alt="Phil Giammattei" />
+    </div>
+    <h1 class="profile-header">Phil Giammattei</h1></a>
+    <a href="javascript: void(0);" class="icon hamburger" onclick="menuToggle()">
+      <img src="images/hamburger-cream.svg" class="hamburger"alt="hamburger menu icon">
+  </a>
+  </div>
+
+  <div class="socialbuttons">
+
+    <a href="https://www.linkedin.com/in/philgiammattei/">
+      <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+    </a>
+    <a href="https://github.com/philgiammattei">
+      <img src="images/github-logo.png" alt="Github: philgiammattei">
+    </a>
+    <a href="https://twitter.com/philgiammattei">
+      <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+    </a>
+  </div>
+
+  </header>
+  <nav id="nav">
+    <ul class="main-nav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="projects.html">PROJECTS</a></li>
+      <li><a href="blog.html">BLOG</a></li>
+      <li><a href="Contact.html">CONTACT</a></li>
+    </ul>
+  </nav>
+
+<!--content goes here!-->
+
+<h1>Dijkstra's Cart</h1>
+
+<p><a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's Algorithm</a> helps you find the shortest path through a graph.  Dijkstra's Cart is an automagic shopping list to help you chart the most efficient route through your neighborhood grocery store.</p>
+
+<p>View this app in action <a href="https://dijikstras-cart.netlify.com/">here</a>.</p>
+
+<a href="https://dijikstras-cart.netlify.com/"><img src="images/dijkstrascart.png" class="img-content" alt="Dijkstra's Cart"></a>
+
+<h2>Features</h2>
+
+<p>Dijkstra's Cart inputs a series of grocery items from the user (e.g. Broccoli or Pork Chops), and matches each item to a section of the store (e.g. Produce or Meat).  Each item is mapped to its corresponding section as it is entered, and the sections are ordered by their location in the store (Users can re-order sections to match their store's layout).</p>
+
+<p>If the app cannot match an item to a section, the user can manually select its section, and Dijikstra's Cart will remember this mapping for all future sessions.</p>
+
+<p>This app was designed to be accessible and mobile-friendly from the start, so touch targets are large and the layout looks great on any size screen.</p>
+
+<h2>Under the Hood</h2>
+
+<p>I wrote Dijkstra's Cart to help familiarize myself with React, a popular front-end library and industry hot topic.  React excels at creating modular views and responding quickly and efficiently to input, so it's the perfect match for an auto-sorting grocery list.</p>
+
+<p>React organizes on Components, which are lightweight, modular and reusable.  The <code>&lt;App /&gt;</code> component contains the header and <code>&lt;List /&gt;</code>, which is itself composed of <code>&lt;Section /&gt;</code> components, which generate <code>&lt;Item /&gt;</code> and <code>&lt;Checkbox /&gt;</code> components.</p>
+
+<p>Through callback functions, mouse input trickles up the hierarchy, and the <code>setState()</code>  and <code>render()</code> functions of parent components pass information from parents to children.  Most of the business logic of the app occurs at the <code>&lt;List /&gt;</code> level, where arrays of interrelated <code>item</code> and <code>section</code> objects are manipulated to reflect the user's input.</p>
+
+<p>Dijkstra's Cart utilizes an <a href="https://airtable.com">Airtable</a> back-end to create an ever-growing and persistent knowledge base.  On loading, the app calls for 2 database tables as JSON, which are then processed and mapped into the state of the <code>&lt;List /&gt;</code> component.  Every time a new item-to-section mapping is made by the user, the app makes a call to insert a new record into the table that manages those relationships.  The next time any user adds that item, it will automatically be placed in its proper section.</p>
+
+<h2>Whats Next</h2>
+
+<p>The most obvious future feature for this app is the ability for users to save and load their personalized list, and adjust it according to their needs.  Currently every time the app loads, it starts with an empty list, and while the database makes section mapping persistent, I want to utilize it further to make this app truly useful to efficiency-minded shoppers.</p>
+
+<p>I originally developed this app as a replacement for iOS Reminders, which was a very functional grocery list solution until iOS 13, where re-ordering items became a frustrating chore.  Apple has an open Reminders API, so my hope is that one day I can make a native iOS/watchOS app that takes full advantage of the power of iCloud.  Don't even get me started on possible Augmented Reality use cases, that's a discussion for 2021 at the earliest.</p>
+
+
+
+
+<!--content ends here!-->
+
+
+  <footer>
+  <a href="https://www.linkedin.com/in/philgiammattei/">
+    <img src="images/linkedin-logo.png" alt="linkedin: Phil Giammattei">
+  </a>
+  <a href="https://github.com/philgiammattei">
+    <img src="images/github-logo.png" alt="Github: philgiammattei">
+  </a>
+  <a href="https://twitter.com/philgiammattei">
+    <img src="images/twitter-logo.png" alt="twitter @philgiammattei">
+  </a>
+  </footer>
+<script type="text/javascript">
+  function menuToggle() {
+    var menu = document.getElementById("nav");
+    if (menu.style.display === "block") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "block";
+    }
+  }
+</script>
+</body>
+
+</html>
